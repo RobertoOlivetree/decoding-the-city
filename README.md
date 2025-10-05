@@ -5,38 +5,61 @@ Data Science and AI approaches to analyze and explain urban accessibility patter
 
 ## Overview
 
-**Decoding the City** is a research-oriented project that applies **Data Science** and **Artificial Intelligence (AI)** to analyze and explain **urban accessibility** in the city of **Porto, Portugal**.  
-Through **geospatial analysis**, **clustering**, and **Explainable AI (XAI)**, the project studies how different population groups — particularly the elderly — access essential services such as healthcare, education, commerce, and transportation.
+**Decoding the City** is a research-oriented project that applies **Data Science** and **Artificial Intelligence (AI)** to analyze and explain **urban accessibility** in **Porto, Portugal**.  
+Using **geospatial analysis**, **clustering**, and **Explainable AI (XAI)**, it studies how different population groups — particularly the elderly — access essential services such as healthcare, education, commerce, and transportation.
 
-The goal is to generate insights that support **inclusive urban planning**, **mobility equity**, and **data-driven decision-making** for more sustainable and human-centered cities.
+The project aims to generate insights that support **inclusive urban planning**, **mobility equity**, and **data-driven decision-making** for more sustainable cities.
 
 ---
 
 ## Motivation
 
-Accessibility is one of the core aspects of urban equity and social inclusion.  
-By integrating open data and AI, this project aims to:
+Accessibility is a core component of urban equity and social inclusion.  
+By combining open data and AI, this project seeks to:
 
-- Identify **patterns of inequality in urban accessibility** across Porto’s parishes.  
-- Apply **machine learning and clustering** to classify areas based on service proximity.  
-- Use **explainable AI methods** to understand *why* certain areas show better or worse accessibility.  
+- Identify **patterns of inequality in accessibility** across Porto’s parishes.  
+- Apply **machine learning and clustering** to classify areas by service proximity.  
+- Use **explainable AI** to understand *why* certain areas show better or worse accessibility.  
 
 ---
 
 ## Project Structure
 
+decoding-the-city/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── data/ # Folder for datasets (not included in repo)
+├── notebooks/
+│ ├── Initial_setup.ipynb
+│ ├── data_exploration_base.ipynb
+│ ├── data_exploration.ipynb
+│ ├── clustering_base.ipynb
+│ ├── clustering.ipynb
+│ ├── explainable_ai_clustering_base.ipynb
+│ ├── explainable_ai_clustering.ipynb
+│ └── case_study_prep.ipynb
+├── src/
+│ └── init.py
+└── docs/
+
+
 ---
 
 ## 📁 File Descriptions
 
-### **Data Files (`/data/`)**
+### **Data Folder (`/data/`)**
 
-| File | Description |
-|------|--------------|
-| **average_distance_to_services.csv** | Contains the average distance from each parish to various categories of essential services (e.g., hospitals, schools, markets). This serves as the main accessibility metric. |
-| **population_65_plus.csv** | Demographic data showing the proportion of residents aged 65 and older per parish, used to analyze accessibility for vulnerable populations. |
-| **porto_parishes.csv** | Geospatial data defining the administrative boundaries of Porto’s parishes. Enables mapping and spatial visualization of results. |
-| **services_by_category.csv** | List of categorized services (e.g., Health, Education, Commerce) with geographic coordinates, used to compute service density and proximity. |
+> ⚠️ The dataset files are **not included** in this repository.  
+> They should be placed in the `/data/` folder before running the notebooks.
+
+Expected data files:
+- `average_distance_to_services.csv`
+- `population_65_plus.csv`
+- `porto_parishes.csv`
+- `services_by_category.csv`
+
+*(File names kept for reference — not stored in the repo.)*
 
 ---
 
@@ -44,14 +67,11 @@ By integrating open data and AI, this project aims to:
 
 | Notebook | Description |
 |-----------|-------------|
-| **Initial_setup.ipynb** | Initializes the project, loads datasets, and ensures the environment is ready for analysis. |
-| **data_exploration_base.ipynb** | Basic exploratory analysis: statistical summaries, missing values, and simple visualizations. |
-| **data_exploration.ipynb** | Advanced geospatial data exploration using maps and accessibility metrics. |
-| **clustering_base.ipynb** | First clustering tests using methods such as K-Means and DBSCAN to identify groups of similar parishes. |
-| **clustering.ipynb** | Optimized clustering with fine-tuned parameters and validation metrics. |
-| **explainable_ai_clustering_base.ipynb** | Introduces explainability tools to interpret which features influence clustering results. |
-| **explainable_ai_clustering.ipynb** | Advanced explainability analysis with SHAP and visualization of feature importance. |
-| **case_study_prep.ipynb** | Prepares outputs, maps, and summaries for the final case study and reporting. |
+| **Initial_setup.ipynb** | Loads datasets and sets up the environment. |
+| **data_exploration.ipynb** | Exploratory and geospatial data analysis. |
+| **clustering.ipynb** | Clustering experiments using K-Means, DBSCAN, etc. |
+| **explainable_ai_clustering.ipynb** | Explainability analysis with SHAP. |
+| **case_study_prep.ipynb** | Prepares final outputs and maps for reporting. |
 
 ---
 
@@ -59,25 +79,25 @@ By integrating open data and AI, this project aims to:
 
 | File | Description |
 |------|--------------|
-| **requirements.txt** | Lists Python dependencies needed to reproduce the environment. |
-| **.gitignore** | Defines which files and folders are ignored by Git (temporary data, virtual environments, caches, etc.). |
-| **src/** | Optional folder for helper scripts or reusable Python modules. |
-| **docs/** | Folder for generated reports, charts, and exported figures. |
+| **requirements.txt** | Python dependencies for environment setup. |
+| **.gitignore** | Excludes unnecessary or large files (like `/data/`). |
+| **src/** | Optional folder for helper scripts. |
+| **docs/** | For generated figures and documentation. |
 
 ---
 
 ## Objectives
 
-- Measure **urban accessibility** and service proximity across Porto.  
-- Detect **spatial patterns** using clustering algorithms.  
-- Apply **Explainable AI** to interpret model behavior and key drivers.  
-- Support **inclusive and evidence-based urban planning**.
+- Measure and visualize **urban accessibility** in Porto.  
+- Detect **spatial patterns** using clustering.  
+- Apply **Explainable AI (XAI)** to interpret models.  
+- Promote **inclusive, data-driven urban planning**.
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Create and activate a virtual environment
+### Create and activate a virtual environment
 ```bash
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
@@ -88,5 +108,6 @@ pip install -r requirements.txt
 jupyter lab
 # or
 jupyter notebook
+
 
 
