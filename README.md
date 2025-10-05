@@ -54,10 +54,10 @@ By combining open data and AI, this project seeks to:
 | Notebook | Description |
 |-----------|-------------|
 | **Initial_setup.ipynb** | Loads datasets and sets up the environment. |
+| **case_study_prep.ipynb** | Prepares final outputs and maps for reporting. |
 | **data_exploration.ipynb** | Exploratory and geospatial data analysis. |
 | **clustering.ipynb** | Clustering experiments using K-Means, DBSCAN, etc. |
 | **explainable_ai_clustering.ipynb** | Explainability analysis with SHAP. |
-| **case_study_prep.ipynb** | Prepares final outputs and maps for reporting. |
 
 ---
 
