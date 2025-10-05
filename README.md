@@ -35,7 +35,7 @@ By combining open data and AI, this project seeks to:
 - **data/** — Datasets *(not included in the repository)*  
 - **notebooks/** — Jupyter notebooks for data analysis and modeling  
   - `Initial_setup.ipynb`
-  -  - `case_study_prep.ipynb`
+  - `case_study_prep.ipynb`
   - `data_exploration_base.ipynb`
   - `data_exploration.ipynb`
   - `clustering_base.ipynb`
