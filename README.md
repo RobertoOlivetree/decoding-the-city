@@ -25,23 +25,26 @@ By combining open data and AI, this project seeks to:
 
 ## Project Structure
 
-decoding-the-city/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── data/ # Folder for datasets (not included in repo)
-├── notebooks/
-│ ├── Initial_setup.ipynb
-│ ├── data_exploration_base.ipynb
-│ ├── data_exploration.ipynb
-│ ├── clustering_base.ipynb
-│ ├── clustering.ipynb
-│ ├── explainable_ai_clustering_base.ipynb
-│ ├── explainable_ai_clustering.ipynb
-│ └── case_study_prep.ipynb
-├── src/
-│ └── init.py
-└── docs/
+**Repository layout**
+
+- **README.md** — Project documentation and overview  
+- **requirements.txt** — Python dependencies  
+- **.gitignore** — Files and folders excluded from version control  
+
+**Main folders**
+- **data/** — Datasets *(not included in the repository)*  
+- **notebooks/** — Jupyter notebooks for data analysis and modeling  
+  - `Initial_setup.ipynb`
+  - `data_exploration_base.ipynb`
+  - `data_exploration.ipynb`
+  - `clustering_base.ipynb`
+  - `clustering.ipynb`
+  - `explainable_ai_clustering_base.ipynb`
+  - `explainable_ai_clustering.ipynb`
+  - `case_study_prep.ipynb`
+-  **src/** — Optional Python scripts and helper functions  
+-  **docs/** — Generated charts, figures, and documentation
+
 
 
 ---
@@ -95,7 +98,7 @@ Expected data files:
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### Create and activate a virtual environment
 ```bash
