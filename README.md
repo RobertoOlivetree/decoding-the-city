@@ -49,23 +49,6 @@ By combining open data and AI, this project seeks to:
 
 ---
 
-## 📁 File Descriptions
-
-### **Data Folder (`/data/`)**
-
-> ⚠️ The dataset files are **not included** in this repository.  
-> They should be placed in the `/data/` folder before running the notebooks.
-
-Expected data files:
-- `average_distance_to_services.csv`
-- `population_65_plus.csv`
-- `porto_parishes.csv`
-- `services_by_category.csv`
-
-*(File names kept for reference — not stored in the repo.)*
-
----
-
 ### **Notebooks (`/notebooks/`)**
 
 | Notebook | Description |
